@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <title>Instagram feed boostrap</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row bg-light p-2 mb-2">
+      <div class="col bg-light">
+       <i class="fa-brands fa-instagram"></i>&nbsp; <strong>Instagram</strong>
+        <ul class="nav justify-content-end nav-pills">
+      </div>
+      <div class="col-2">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body ">
+                  <strong>Caption:</strong>
+              </div>
+              <div class="form-group p-3">
+                <label for="exampleFormControlTextarea1"></label>
+                <textarea class="form-control pd-2" id="exampleFormControlTextarea1" rows="2">Add the caption of your post here</textarea>
+              </div>
+              <div class="icons pl-2 pb-4">
+                &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>&nbsp;
+                <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+              </div>                          
+                            
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacity and data</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </ul>
+  </div>
+
+    <nav>
+      <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+         <div class="row  row-cols-md-3 g-4 grid-pics p-2">
+          <img src="https://i.pinimg.com/474x/59/16/18/591618a12b973cbe377f68c7aa5e203f.jpg" alt="...">
+          <img src="https://javierico.neocities.org/img/img01.jpg" alt="...">
+          <img src="https://i.aquarelle.com/06/images/produits/ramo-de-rosas-de-colores-400x400-42352.jpg" alt="...">
+          <img src="https://i.pinimg.com/474x/f7/2e/3d/f72e3de51e0bf945ced8e3e1300e53ff.jpg" alt="">
+          <img src="https://uploads.mwp.mprod.getusinfo.com/uploads/sites/15/2021/03/CG-BriannaPowers-400x400-2.png" alt="">
+          <img src="https://www.ducreams.com/wp-content/uploads/elementor/thumbs/pexels-hayron-fotos-13618083-scaled-q62p3s45wtm99lwv2ui7r9u8gn40k55h33l9u2r3c0.jpg" alt="">
+          <img src="https://i.pinimg.com/originals/93/3a/a9/933aa999e7ff1fa16970ec097aaefbca.jpg" alt="...">
+          <img src="https://static.nationalgeographicla.com/files/styles/image_3200/public/pia00271_detail.jpg?w=400&h=400&q=75" alt="...">
+          <img src="https://luzlux.com/wp-content/uploads/2019/11/PLZX0378-400x400.jpg" alt="...">
+        </div>
+      </div>      
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="card d-flex mx-auto m-4" style="width: 50%;">
+          <div class="card-body">
+             <p class="d-flex">
+          <div class="d-inline-flex"><h3>My amazing dog</h3></div>
+          <div class="d-inline-flex float-end">06/08</div>
+            </p>
+          </div>
+          <img src="https://i.pinimg.com/474x/59/16/18/591618a12b973cbe377f68c7aa5e203f.jpg" class="card-img-top" alt="dog">
+          <div class="card-body">
+            <p class="card-text"><strong>204 likes</strong><br>Playing at home.</p>        </div>
+          </div>
+        <div class="card d-flex mx-auto m-4" style="width: 50%;">
+          <div class="card-body">
+            <p class="d-flex">
+          <div class="d-inline-flex"><h3>Balaton Lake</h3></div>
+          <div class="d-inline-flex float-end">01/27</div>
+            </p>
+          </div>
+          <img src="https://i.pinimg.com/originals/93/3a/a9/933aa999e7ff1fa16970ec097aaefbca.jpg" class="card-img-top" alt="dog">
+          <div class="card-body">
+            <p class="card-text"><strong>1234 likes</strong><br>Ducks chilling under the sun.</p>
+         </div>
+        </div>
+        <div class="card d-flex mx-auto m-4" style="width: 50%;">
+          <div class="card-body">
+            <p class="d-flex">
+          <div class="d-inline-flex"><h3>Buquet of roses</h3></div>
+          <div class="d-inline-flex float-end">02/10</div>
+            </p>
+          </div>
+          <img src="https://i.aquarelle.com/06/images/produits/ramo-de-rosas-de-colores-400x400-42352.jpg" class="card-img-top" alt="dog">
+          <div class="card-body">
+            <p class="card-text"><strong>204 likes</strong><br>The most beautiful flowers in world..</p>
+          </div>
+        </div>
+      </div> 
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script></body>
+  </body>
+</html>
+
+
+
+
+<!--
+</div>
+<div class="tab-pane fade d-flex justify-content-center p-2" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+  <div class="card" style="width: 40rem;"><div class="mx-auto p-2" style="width: 50%;"></div>
+    <p class="card-text">
+      <div class="d-flex">
+        <div class="flex-fill d-flex">
+          <h5>&nbsp;&nbsp;My Crazy dog Spark!</h5>
+        </div>
+        <div class="flex-fill d-flex justify-content-end pr-3">
+          <p>08/26&nbsp;</p>
+        </div>
+      </div>
+    </p>
+    <img src="https://i.pinimg.com/474x/59/16/18/591618a12b973cbe377f68c7aa5e203f.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text"><strong>204 likes</strong><br>This is an example of a very good photo that you can post on Instagram</p>
+    </div>
+  </div>  
+</div>
+ -->
